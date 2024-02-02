@@ -1,0 +1,249 @@
+
+  
+  /********fontes************/
+  @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Acme&family=Montserrat:wght@500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap');
+  /************************** */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+/** divs gerais **/
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.clear{
+    clear:both !important;
+}
+
+
+
+header {
+    background-image: linear-gradient( 291.7deg,  rgba(255,134,134,1) 21.5%, rgba(249,141,255,1) 93.1% );
+    padding: 10px 2% 30px 2%;
+}
+/***********************************/
+
+/*******LOGO**********/
+.logo1{
+    float: left;
+    width: 100px;
+    height: 70px;
+}
+
+.logo1 h1{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin: 0px 15px;
+    font-family: 'Satisfy', cursive;
+}
+
+.logo2{
+    float: right;
+    width: 100px;
+    height: 80px;
+    background-image: url(../imagens/_9c274819-a223-4223-81d1-4b751f34dfc3-removebg-preview.png);
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/**LOGO**/
+
+/*FORMULARIO*/
+section.cover-form{
+    width: 100%;
+    padding: 0 2%;
+    
+}
+
+.bg{
+    position: relative;
+    height: 520px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../imagens/cover.jpg);
+}
+
+
+.form-container{
+    position: absolute;
+    right: 30px;
+    top:-50px;
+    margin-right: 40px;
+    width: 350px;
+    height: 110%;
+    background-color: white;
+    font-family: 'Acme', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 15px 0px;
+}
+
+.form-container h2{
+    text-align: center;
+    border-radius: 15px 0px;
+}
+
+.form-wraper:not(:first-child){
+    margin-top: 40px;
+}
+
+
+
+.form-container h2{
+    font-weight: normal;
+    padding: 20px 15px;
+    color: rgb(255, 252, 255);
+    background: rgba(63,94,251.1);
+    background: -moz-linear-gradient(147deg, rgba(63,94,251,1) 0%, rgba(165,81,173,1) 23%, rgba(252,70,107,1) 100%);
+    background: -webkit-linear-gradient(147deg, rgba(63,94,251,1) 0%, rgba(165,81,173,1) 23%, rgba(252,70,107,1) 100%);
+    background: linear-gradient(147deg, rgba(63,94,251,1) 0%, rgba(165,81,173,1) 23%, rgba(252,70,107,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3f5efb",endColorstr="#fc466b",GradientType=1);
+    font-size: 18px;
+}
+
+.form-container form{
+  margin-top: 8px;
+  padding: 20px;
+}
+.form-container form p{
+    font-size: 13px;
+    color: rgb(52,52,52);
+}
+
+.form-container form input[type="text"]{
+    width:100%;
+    border: 1px solid #ccc;
+    height: 45px;
+    line-height: 45px;
+    padding-left: 10px;
+    font-family: 'Poor Story', system-ui;
+
+}
+
+.form-wraper:last-child{
+    margin-top: 20px;
+}
+
+.glow-on-hover {
+    margin-top: 50px;
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-family: 'Acme', sans-serif;
+    font-size: 15px;
+    
+
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+
+
+/**FORMULARIO*/
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+
+section.chamada{
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: rgb(141, 113, 113);
+   
+}
+
+section.chamada h2{
+    color: #ffffff;
+    width: 96%;
+    max-width: 600px;
+    display: inline-block;
+    font-size: 30px;
+    font-weight: normal;
+    font-family: 'Sixtyfour', sans-serif;
+    
+}
+
+
+
+@media screen and (max-width: 510px){
+    
+    header{
+        text-align: center;
+    }
+    .logo1, .logo2{
+        margin-top: 10px;
+        display:inline-block;
+        float: none;
+
+    }
+    
+}
