@@ -12,7 +12,7 @@ HTTPS : https://github.com/demorojao/landing-page.git
 SSH: git@github.com:demorojao/landing-page.git
 
 GITHUB CLI : gh repo clone demorojao/landing-page 
-</br>
+
 
 
 
@@ -38,5 +38,5 @@ Se você estiver acessando uma organização que usa o SSO (logon único) do SAM
 
 Dica: use uma URL com SSH para clonar um repositório no computador ou como uma forma segura de implantar seu código em servidores de produção. Você também pode usar o encaminhamento de agente SSH com o seu script de implantação para evitar o gerenciamento de chaves no servidor. Para obter mais informações, confira "Usar o encaminhamento de agente SSH".
 
-Clonar com GitHub CLI
+<n>Clonar com GitHub CLI</n>
 Você também pode instalar o GitHub CLI para usar os fluxos de trabalho do GitHub no seu terminal. Para obter mais informações, confira "Sobre o a CLI do GitHub".
