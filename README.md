@@ -16,27 +16,27 @@ GITHUB CLI : gh repo clone demorojao/landing-page
 
 
 
-Clonando com as URLs de HTTPS
-As URLs de clone https:// estão disponíveis em todos os repositórios, independentemente da visibilidade. As URLs de clone https:// funcionam mesmo que você esteja protegido por um firewall ou um proxy.
+Cloning with HTTPS URLs
+https:// clone URLs are available in all repositories, regardless of visibility. https:// clone URLs work even if you are behind a firewall or proxy.
 
-Quando você usar git clone, git fetch, git pull ou git push em um repositório remoto usando URLs HTTPS na linha de comando, o Git solicitará seu nome de usuário e sua senha do GitHub. Quando o Git solicitar sua senha, insira seu personal access token. Como alternativa, você pode usar um auxiliar de credencial como o Gerenciador de Credenciais do Git. A autenticação baseada em senha do Git foi removida para dar lugar a métodos de autenticação mais seguros. Para obter mais informações, veja "Gerenciar seus tokens de acesso pessoal".
+When you use git clone, git fetch, git pull, or git push on a remote repository using HTTPS URLs on the command line, Git will prompt you for your GitHub username and password. When Git asks for your password, enter your personal access token. Alternatively, you can use a credential helper like Git Credential Manager. Git's password-based authentication has been removed to make way for more secure authentication methods. For more information, see "Manage your personal access tokens."
 
-Se você estiver acessando uma organização que usa o SSO do SAML e usando um personal access token (classic), será necessário autorizar o personal access token para acessá-la antes de autenticar-se. Para obter mais informações, confira "Sobre a autenticação com logon único de SAML" e "Autorizar o uso de um token de acesso pessoal para uso com logon único SAML".
+If you are accessing an organization that uses SAML SSO and using a personal access token (classic), you must authorize the personal access token to access it before authenticating. For more information, see "About authentication with SAML single sign-on" and "Authorize the use of a personal access token for use with SAML single sign-on."
 
-Dicas:
+Tips:
 
-Você pode usar um auxiliar de credenciais para que o Git se lembre de suas credenciais de GitHub toda vez que falar com GitHub. Para obter mais informações, confira "Armazenar suas credenciais do GitHub no Git".
-Para clonar um repositório sem se autenticar no GitHub na linha de comando, use o GitHub Desktop para a clonagem. Para obter mais informações, confira "Clonar um repositório do GitHub para o GitHub Desktop".
-Se você prefere usar o SSH mas não consegue se conectar pela porta 22, use o SSH pela porta HTTPS. Para obter mais informações, confira "Usar SSH na porta HTTPS".
+You can use a credentials helper to have Git remember your GitHub credentials every time you talk to GitHub. For more information, see "Store your GitHub credentials in Git."
+To clone a repository without authenticating to GitHub from the command line, use GitHub Desktop for cloning. For more information, see "Clone a GitHub repository to GitHub Desktop."
+If you prefer to use SSH but cannot connect over port 22, use SSH over the HTTPS port. For more information, see "Use SSH on the HTTPS port."
 
-Clonar com URLs de SSH
-As URLs de SSH fornecem acesso a um repositório do Git via SSH, um protocolo seguro. Para usar estas URLs, gere um par de chaves SSH no computador e adicione a chave pública à sua conta do GitHub.com. Para obter mais informações, confira "Conectar-se ao GitHub com o SSH".
+Clone with SSH URLs
+SSH URLs provide access to a Git repository via SSH, a secure protocol. To use these URLs, generate an SSH key pair on your computer and add the public key to your GitHub.com account. For more information, see "Connect to GitHub with SSH."
 
-Quando você usar git clone, git fetch, git pullou git push em um repositório remoto usando URLs SSH, precisará inserir uma senha e fornecer sua frase secreta de chave SSH. Para obter mais informações, confira "Trabalhar com frase secreta da chave SSH".
+When you use git clone, git fetch, git pull, or git push on a remote repository using SSH URLs, you will need to enter a password and provide your SSH key passphrase. For more information, see "Work with SSH key passphrase."
 
-Se você estiver acessando uma organização que usa o SSO (logon único) do SAML, precisará autorizar sua chave SSH a acessar a organização antes de realizar a autenticação. Para obter mais informações, confira "Sobre a autenticação com logon único de SAML" e "Autorizar o uso de uma chave SSH para uso com logon único SAML" na documentação do GitHub Enterprise Cloud.
+If you are accessing an organization that uses SAML single sign-on (SSO), you will need to authorize your SSH key to access the organization before authenticating. For more information, see "About authentication with SAML single sign-on" and "Authorize the use of an SSH key for use with SAML single sign-on" in the GitHub Enterprise Cloud documentation.
 
-Dica: use uma URL com SSH para clonar um repositório no computador ou como uma forma segura de implantar seu código em servidores de produção. Você também pode usar o encaminhamento de agente SSH com o seu script de implantação para evitar o gerenciamento de chaves no servidor. Para obter mais informações, confira "Usar o encaminhamento de agente SSH".
+Tip: Use a URL with SSH to clone a repository on your computer or as a secure way to deploy your code to production servers. You can also use SSH agent forwarding with your deployment script to avoid managing keys on the server. For more information, see "Use SSH agent forwarding."
 
-<n>Clonar com GitHub CLI</n>
-Você também pode instalar o GitHub CLI para usar os fluxos de trabalho do GitHub no seu terminal. Para obter mais informações, confira "Sobre o a CLI do GitHub".
+<n>Clone with GitHub CLI</n>
+You can also install the GitHub CLI to use GitHub workflows on your terminal. For more information, see "About the GitHub CLI."
