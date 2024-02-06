@@ -1,11 +1,12 @@
 
   
   /********fontes************/
-  @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Acme&family=Montserrat:wght@500&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');/*-->Satisfy*/
+  @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');/*-->Acme*/
+  @import url('https://fonts.googleapis.com/css2?family=Acme&family=Montserrat:wght@500&display=swap');/*-->Acme & Montserrat*/ 
+  @import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');/*-->Poor Stary*/
+  @import url('https://fonts.googleapis.com/css2?family=Gaegu&display=swap');/*-->Gaegu*/
+  @import url('https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap');/*-->Sixty Four*/
   /************************** */
 
 
@@ -92,6 +93,7 @@ section.cover-form{
     font-family: 'Montserrat', sans-serif;
     box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
     border-radius: 15px 0px;
+    background-color: rgba(243, 241, 242, 0.884);
 }
 
 .form-container h2{
@@ -214,10 +216,11 @@ section.cover-form{
 
 section.chamada{
     z-index: 1;
-    width: 100%;
+    width: auto;
     text-align: center;
     padding: 30px 0;
-    background-color: rgb(141, 113, 113);
+    background-color: rgb(177, 151, 177);
+    margin-left: 52px;
    
 }
 
@@ -233,7 +236,100 @@ section.chamada h2{
 }
 
 
+.flex-mosaico {
+    display: flex;
+}
 
+.item-mosaico1{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 60%;
+}
+
+.item-mosaico2{
+    width: 40%;
+    padding: 60px;
+    font-size: 25px;
+    background: rgb(122,143,247);
+    background: -moz-radial-gradient(circle, rgba(122,143,247,1) 0%, rgba(252,70,107,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(122,143,247,1) 0%, rgba(252,70,107,1) 100%);
+    background: radial-gradient(circle, rgba(122,143,247,1) 0%, rgba(252,70,107,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7a8ff7",endColorstr="#fc466b",GradientType=1);
+    color:#ffffff;
+    font-family: 'Gaegu', sans-serif;
+    border: 1px solid rgb(238, 186, 186) !important;
+    
+
+
+}
+
+
+
+footer{
+    background-color: #866980;
+}
+
+footer p{
+    margin-top: 4px;
+    padding: 10px 50px;
+    color: #ffffff;
+    text-align: center; 
+}
+
+footer .pata{
+    margin-top: 4px;
+    padding: 10px 50px;
+    color: #ffffff;
+    text-align: center;
+}
+  
+
+
+
+@media screen and (max-width: 760px) {
+    .flex-mosaico{
+        display: block;
+
+    }
+   
+    .item-mosaico1{
+      width: 100%;
+      padding-top: 100%;
+  
+   }
+
+   .item-mosaico2{
+    width: 100%;
+    text-align: center;
+   }
+}
+
+
+
+
+@media screen and (max-width: 968px) {
+    .bg{
+        text-align: center;
+        padding: 40px 0;
+    }
+    .form-container{
+        position: static;
+        display: inline-block;
+        max-width:400px ;
+        width: 95%;
+        height: auto;
+        margin-left: 10px;
+       
+    }  
+  
+    .container .chamada{
+      width: 400px;
+      margin: 0%;
+      padding: 40px 0;
+    }
+
+}
 @media screen and (max-width: 510px){
     
     header{
