@@ -216,12 +216,12 @@ section.cover-form{
 
 section.chamada{
     z-index: 1;
-    width: auto;
+    width: 100%;
     text-align: center;
     padding: 30px 0;
-    background-color: rgb(177, 151, 177);
-    margin-left: 52px;
-   
+    background-color: rgb(177, 151, 177); 
+    border-radius: 15px 15px 15px;
+    border: 2px solid rgba(122,143,247,1)  
 }
 
 section.chamada h2{
